@@ -2,7 +2,7 @@ import { BeforeInsert, Column, Entity, PrimaryGeneratedColumn } from 'typeorm';
 
 @Entity({ name: 'users' })
 export class User {
-    @PrimaryGeneratedColumn()
+    @PrimaryGeneratedColumn({ type: 'bigint' })
     id: number;
 
     @Column({ unique: true })
@@ -11,11 +11,6 @@ export class User {
     @Column()
     password: string;
 
-    @Column({ default: () => 'CURRENT_TIMESTAMP' })
+    @Column()
     createdAt: Date;
-
-    @BeforeInsert()
-    updateCreatedAt() {
-        this.createdAt = new Date();
-    }
 }

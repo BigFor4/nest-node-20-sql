@@ -6,8 +6,8 @@ import { User } from '@entities/user';
         TypeOrmModule.forRoot({
             type: 'mysql',
             host: process.env.HOST || 'localhost',
-            port: process.env.PORT ? parseInt(process.env.PORT) : 80,
-            username: process.env.USERNAME || 'admin',
+            port: process.env.PORT ? parseInt(process.env.PORT) : 3306,
+            username: process.env.USERNAME || 'root',
             password: process.env.PASSWORD || 'admin',
             database: process.env.DATABASE_NAME || 'pivot',
             entities: [User],
