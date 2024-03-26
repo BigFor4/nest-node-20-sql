@@ -24,8 +24,8 @@
       "@configs/*": [
         "./configs/*"
       ],
-      "@entities/*": [
-        "./src/typeorm/entities/*"
+      "@models/*": [
+        "./src/models/*"
       ],
     }
   }

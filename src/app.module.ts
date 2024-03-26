@@ -9,7 +9,7 @@ import { AppService } from './app.service';
             envFilePath: '.env',
             ignoreEnvFile: true,
         }),
-        DatabaseModule
+        DatabaseModule,
     ],
     controllers: [AppController],
     providers: [AppService],
