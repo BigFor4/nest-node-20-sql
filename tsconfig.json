@@ -22,10 +22,13 @@
         "./src/base/*"
       ],
       "@configs/*": [
-        "./configs/*"
+        "./src/configs/*"
       ],
       "@models/*": [
         "./src/models/*"
+      ],
+      "@modules/*": [
+        "./src/modules/*"
       ],
     }
   }
